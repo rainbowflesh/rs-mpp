@@ -22,7 +22,6 @@ mod tests {
             let func1 = CString::new("iamfunc1").unwrap().as_ptr();
             get_mpp_version();
             // u8/i8 depends on the architecture arm/x86
-            // forgive static check error
             (mpp_env_set_u32(mpp_show_history as *const u8, 0));
             println!("woca");
             _mpp_log(tag, fmt, func);
